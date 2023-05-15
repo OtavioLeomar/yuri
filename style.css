@@ -1,0 +1,217 @@
+@import 'animate.css';
+
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+}
+
+body {
+    background-color: #151616;
+}
+
+#superior {
+    position: relative;
+    top: 190px;
+    display: inline-block;
+    background: #151616;
+} 
+
+#inferior {
+    position: relative;
+    top: 145px;
+    display: inline-block;
+    background: #ff69b4;
+} 
+
+#tabela1 h1{
+    position: absolute;
+    left: 700px;
+    top: 500px;
+    border: 1px solid;
+    border-color: #ffffff ;
+    color: #ffe0ff;
+    padding: 20px 250px;
+    background-color:  #151616;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    white-space: nowrap;
+    text-align:end;
+    align-items: center;
+    justify-content: center;
+    width: 165px;
+}
+
+#tabela2 h1{
+    position: absolute;
+    left:700px;
+    top: 585px;
+    border: 1px solid;
+    border-color:  #151616;
+    color: #ffa8d9;
+    padding: 20px 197px;
+    background-color:#ffe0ff;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 271px;
+}
+
+#tabela3 h1{
+    position: absolute;
+    left:700px;
+    top: 673px;
+    border: 1px solid  #ffffff; 
+    color:  #202221;
+    padding: 20px 280px;
+    background-color: #ffa8d9;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 105px;
+}
+
+#quadrado h1{
+    position: absolute;
+    left: 150px;
+    top: 100px;
+    border: 1px solid #c33b80;
+    background-image: url("midias/yuri.jpeg");   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -80px 0px;
+    padding: 200px 170px;
+}
+
+#nome-foto h1 {
+    position: absolute;
+    left: 210px;
+    top: 525px;
+    color:   #191a19;
+    font-size: 35px;
+    font-family: 'League Spartan', sans-serif;
+    text-shadow: 
+        -1px -1px 0px #ffe0ff, 
+        -1px 1px 0px #ffe0ff,                    
+        1px -1px 0px #ffe0ff,                  
+        1px 0px 0px #ffe0ff;
+
+}
+
+#logo {
+    position: absolute;
+    left: 750px;
+    top: 10px;
+    background-image: url(midias/logo.png);
+    background-size: cover;
+    padding: 200px 190px;
+}
+
+footer{
+    position: absolute;
+    color: #ffffff;
+    font-size: 4px;
+    top: 800px;
+    left: 700px;
+}
+
+/* AQUI COMEÇA O RESPONSIVO */
+
+@media screen and (max-width: 500px) {
+
+body {
+    background-image: url(midias/fundo2.png);
+    background-repeat: no-repeat;
+    background-size: 1500px 1100px;
+    height: 1000px;
+}
+
+#superior {
+    visibility: hidden;
+} 
+
+#inferior {
+    visibility: hidden;
+} 
+
+#tabela1 h1{
+    position: absolute;
+    left: 40px;
+    top: 700px;
+    border: 1px solid;
+    border-color: #ffffff ;
+    color:  #ffe0ff;
+    padding: 20px 75px;
+    background-color:  #151616;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#tabela2 h1{
+    position: absolute;
+    left:40px;
+    top: 790px;
+    border: 1px solid;
+    border-color:  #151616;
+    color:  #ffa8d9;
+    padding: 20px 22px;
+    background-color:#ffe0ff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#tabela3 h1{
+    position: absolute;
+    left:40px;
+    top: 880px;
+    border: 1px solid  #ffffff; 
+    color:  #202221;
+    padding: 20px 105px;
+    background-color: #ffc9e8;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#quadrado h1 {
+    position: absolute;
+    left: 80px;
+    top: 300px;
+    border: 1px solid #c33b80;
+    background-image: url(midias/yuri.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -80px 0px;
+    padding: 150px 120px;
+}
+
+#nome-foto h1 {
+    position: absolute;
+    left: 115px;
+    top: 620px;
+    color: #191a19;
+    font-size: 35px;
+    font-family: 'League Spartan', sans-serif;
+
+}
+
+#logo {
+    position: absolute;
+    left: 40px;
+    top: -10px;
+    background-image: url(midias/logo.png);
+    background-size: cover;
+    padding: 150px 150px;
+
+}
+
+footer{
+    position: absolute;
+    color: #ffffff;
+    font-size: 4px;
+    top: 800px;
+    left: 700px;
+}
+}
